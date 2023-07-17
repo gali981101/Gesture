@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="6vT-CU-Hpv">
+                                <rect key="frame" x="46.666666666666657" y="204" width="299.66666666666674" height="444"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gta4" translatesAutoresizingMaskIntoConstraints="NO" id="dUm-8W-tmk">
+                                        <rect key="frame" x="0.0" y="0.0" width="299.66666666666669" height="300"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GTA IV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRV-fC-ept">
+                                        <rect key="frame" x="100" y="344" width="99.666666666666686" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="q2l-WQ-DHk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dUm-8W-tmk" firstAttribute="leading" secondItem="6vT-CU-Hpv" secondAttribute="leadingMargin" id="DOC-wk-9Gl"/>
+                                    <constraint firstAttribute="trailing" secondItem="TRV-fC-ept" secondAttribute="trailing" constant="100" id="eNG-ro-3tj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6vT-CU-Hpv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46.666666666666657" id="0dB-Aa-vCU"/>
+                            <constraint firstItem="6vT-CU-Hpv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="gnf-Au-htY"/>
+                            <constraint firstItem="6vT-CU-Hpv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hlU-lx-hD0"/>
+                            <constraint firstItem="6vT-CU-Hpv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qZE-vN-Jof"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dUm-8W-tmk" id="Hya-LH-sNo"/>
+                        <outlet property="myLabel" destination="TRV-fC-ept" id="wzy-i6-WEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="-46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gta4" width="1680" height="1050"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
